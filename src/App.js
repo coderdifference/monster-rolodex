@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import monsters from './data/monsters';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
 
-    this.state = {
-      monsters: monsters.monsterData
+   this.state = {
+      monsters: []
     };
+  }
+  componentDidMount() {
+    fetch('./data/monsters.json')
+      .then(response => response.json())
+      .then(monsters => this.setState({monsters: monsters}));
   }
   render() {
     return (    
