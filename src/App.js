@@ -7,18 +7,18 @@ class App extends Component {
     super();
 
     this.state = {
-      monsters: [],
+      cards: [],
     };
   }
   componentDidMount() {
-    fetch("./data/monsters.json")
+    fetch("./data/cats.json")
       .then((response) => response.json())
-      .then((monsters) => this.setState({ monsters: monsters }));
+      .then((cards) => this.setState({ cards: cards }));
   }
   render() {
     return (
       <div className="App">
-        <CardList cards={this.state.monsters}/>
+        <CardList cards={this.state.cards}/>
       </div>
     );
   }

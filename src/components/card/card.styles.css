@@ -4,7 +4,7 @@
     background-image: url(/media/images/linedpaper.png);
     border: 1px solid #ccc;
     border-radius: 5px 5px 0px 0px;
-    padding: 25px;
+    padding: 15px;
     cursor: pointer;
     -mox-osx-font-smoothing: greyscale;
     backface-visibility: hidden;
@@ -14,4 +14,14 @@
 
 .card-container:hover {
     transform: scale(1.05);
+}
+
+.card-title {
+    font-family: cursive;
+    margin-top: 5px;
+}
+
+img.card-image {
+    width: 200px;
+    height: 200px;
 }
