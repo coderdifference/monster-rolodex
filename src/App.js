@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   loadCards = datasetName => new Promise(resolve => 
-      fetch(`./data/${datasetName}.json`)
+      fetch(`${process.env.PUBLIC_URL}/data/${datasetName}.json`)
         .then(response => response.json())
         .then(cards => {
           this.setState({ cards: cards });
