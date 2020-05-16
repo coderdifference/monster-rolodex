@@ -30,12 +30,12 @@ class App extends Component {
   componentDidMount() {
     this.loadCards('cats');
   }
-  
+
   render() {
     return (
       <div className="App">
       <h1>Catadex!</h1>
-      <p>Filter the card list by typing a fragment into the filter box</p>
+      <p className="instructions">Filter the card list by typing a fragment into the filter box</p>
       <FilterBox placeholder='Filter catadex...' onChange={e => this.updateFilterTerm(e.target.value)}/>
         <CardList cards={this.getFilteredCards()}/>
       </div>

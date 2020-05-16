@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -10,6 +13,7 @@
     backface-visibility: hidden;
     transform:translate(0);
     transition: transform 0.25s ease-out;
+    box-shadow: 5px 5px 15px #44444444 ;
 }
 
 .card-container:hover {
@@ -18,11 +22,13 @@
 
 .card-title {
     font-size: 1.4em;
+    font-family: 'Lobster', cursive;
     margin-top: 5px;
 }
 
 .card-motto {
     font-weight: 150;
+    font-family: 'Indie Flower', cursive;
     text-align: left;
     display: inline-block;
     border: 2px ridge #dddddd;
