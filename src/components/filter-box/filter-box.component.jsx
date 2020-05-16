@@ -1,5 +1,5 @@
 import React from 'react';
 import './filter-box.styles.css';
 
-export const FilterBox = props => 
-    <input className='filter-box' placeholder={props.placeholder} type="text" onChange={props.onChange}/>;
+export const FilterBox = ({placeholder, onChange}) => 
+    <input className='filter-box' placeholder={placeholder} type="text" onChange={onChange}/>;
