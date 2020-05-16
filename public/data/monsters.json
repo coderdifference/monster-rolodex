@@ -1,14 +1,14 @@
 [
   {
     "id": "frankenstein",
-    "name": "Frakenstein's Monster"
+    "title": "Frakenstein's Monster"
   },
   {
     "id": "dracular",
-    "name": "Dracula"
+    "title": "Dracula"
   },
   {
     "id": "zombie",
-    "name": "Zombie"
+    "title": "Zombie"
   }
 ]
