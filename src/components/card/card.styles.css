@@ -1,7 +1,7 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    background-color: wheat;
+    background-image: url(/media/images/linedpaper.png);
     border: 1px solid #ccc;
     border-radius: 5px 5px 0px 0px;
     padding: 25px;
