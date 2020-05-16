@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Sammy",
+    "motto": "Live life to the fullest"
+  },
+  {
+    "id": 2,
+    "title": "Philomena",
+    "motto": "The early cat gets the bird"
+  },
+  {
+    "id": 3,
+    "title": "Sarah",
+    "motto": "A bird in the mouth is worth 2 in the bush"
+  },
+  {
+    "id": 4,
+    "title": "Thomas",
+    "motto": "I enjoy a good yarn!"
+  },
+  {
+    "id": 5,
+    "title": "Edgar",
+    "motto": "Early to bed. That's it."
+  },
+  {
+    "id": 6,
+    "title": "Poopsie",
+    "motto": "Purrrrrr"
+  },
+  {
+    "id": 7,
+    "title": "Cadbury",
+    "motto": "Ah yes, I'll have the mackerel"
+  },
+  {
+    "id": 9,
+    "title": "Mina",
+    "motto": "A stranger is just a friend who hasn't fed you yet"
+  },
+  {
+    "id": 12,
+    "title": "Remus",
+    "motto": "Sleeping outside? Why?!"
+  }
+]
