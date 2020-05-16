@@ -12,20 +12,26 @@ class App extends Component {
       filterString: ''
     };
   }
+  updateFilterTerm(filter) {
+    this.setState({filterString: filter});
+  }
+  getFilteredCards() {
+    const { cards, filterString } = this.state;
+    return filterString ? cards.filter(card => card.title.toLowerCase().includes(filterString.toLowerCase())) : cards;
+  }
+
   componentDidMount() {
     fetch("./data/cats.json")
       .then((response) => response.json())
       .then((cards) => this.setState({ cards: cards }));
   }
   render() {
-    const { cards, filterString } = this.state;
-    const matched = filterString ? cards.filter(card => card.title.toLowerCase().includes(filterString.toLowerCase())) : cards;
     return (
       <div className="App">
       <h1>Catadex!</h1>
       <p>Filter the card list by typing a fragment into the filter box</p>
-      <FilterBox placeholder='Filter catadex...' onChange={e => this.setState({ filterString: e.target.value })}/>
-        <CardList cards={matched}/>
+      <FilterBox placeholder='Filter catadex...' onChange={e => this.updateFilterTerm(e.target.value)}/>
+        <CardList cards={this.getFilteredCards()}/>
       </div>
     );
   }
