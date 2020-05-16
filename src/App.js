@@ -17,13 +17,15 @@ class App extends Component {
   }
   getFilteredCards() {
     const { cards, filterString } = this.state;
-    return filterString ? cards.filter(card => card.title.toLowerCase().includes(filterString.toLowerCase())) : cards;
+    return cards.filter(card => card.title.toLowerCase().includes(filterString.toLowerCase()));
   }
-
+  loadCards(datasetName) {
+    fetch(`./data/${datasetName}.json`)
+    .then((response) => response.json())
+    .then((cards) => this.setState({ cards: cards }));
+  }
   componentDidMount() {
-    fetch("./data/cats.json")
-      .then((response) => response.json())
-      .then((cards) => this.setState({ cards: cards }));
+    this.loadCards('cats');
   }
   render() {
     return (
