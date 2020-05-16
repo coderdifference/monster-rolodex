@@ -1,38 +1,47 @@
 [
   {
     "id": 1,
-    "title": "Sammy"
+    "title": "Sammy",
+    "motto": "Live life to the fullest"
   },
   {
     "id": 2,
-    "title": "Philomena"
+    "title": "Philomena",
+    "motto": "The early cat gets the bird"
   },
   {
     "id": 3,
-    "title": "Sarah"
+    "title": "Sarah",
+    "motto": "A bird in the mouth is worth 2 in the bush"
   },
   {
     "id": 4,
-    "title": "Thomas"
+    "title": "Thomas",
+    "motto": "Leave me alone"
   },
   {
     "id": 5,
-    "title": "Edgar"
+    "title": "Edgar",
+    "motto": "Early to bed. That's it."
   },
   {
     "id": 6,
-    "title": "Poopsie"
+    "title": "Poopsie",
+    "motto": "Purrrrrr"
   },
   {
     "id": 7,
-    "title": "Cadbury"
+    "title": "Cadbury",
+    "motto": "Ah yes, I'll have the mackerel"
   },
   {
     "id": 9,
-    "title": "Mina"
+    "title": "Mina",
+    "motto": "A stranger is just a friend who hasn't fed you yet"
   },
   {
     "id": 12,
-    "title": "Remus"
+    "title": "Remus",
+    "motto": "Sleeping outside? Why?!"
   }
 ]

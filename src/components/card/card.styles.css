@@ -1,8 +1,8 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    background-image: url(/media/images/linedpaper.png);
-    border: 1px solid #ccc;
+    background-color: #ffc300;
+    border: 1px solid #d20404;
     border-radius: 5px 5px 0px 0px;
     padding: 15px;
     cursor: pointer;
@@ -17,11 +17,23 @@
 }
 
 .card-title {
-    font-family: cursive;
+    font-size: 1.4em;
     margin-top: 5px;
 }
 
+.card-motto {
+    font-weight: 150;
+    text-align: left;
+    display: inline-block;
+    border: 2px ridge #dddddd;
+    padding: 5px;
+    background-color: #fefefefe;
+}
+
 img.card-image {
-    width: 200px;
-    height: 200px;
+    border: 1px solid #222222;
+    padding: 5px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px #44444444 ;
+    background-color: white;
 }
