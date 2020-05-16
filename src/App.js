@@ -12,21 +12,25 @@ class App extends Component {
       filterString: ''
     };
   }
-  updateFilterTerm(filter) {
-    this.setState({filterString: filter});
-  }
-  getFilteredCards() {
+  updateFilterTerm = filter => this.setState({filterString: filter});
+
+  getFilteredCards = () => {
     const { cards, filterString } = this.state;
     return cards.filter(card => card.title.toLowerCase().includes(filterString.toLowerCase()));
   }
-  loadCards(datasetName) {
-    fetch(`./data/${datasetName}.json`)
-    .then((response) => response.json())
-    .then((cards) => this.setState({ cards: cards }));
-  }
+
+  loadCards = datasetName => new Promise(resolve => 
+      fetch(`./data/${datasetName}.json`)
+        .then(response => response.json())
+        .then(cards => {
+          this.setState({ cards: cards });
+          resolve();
+        }));
+  
   componentDidMount() {
     this.loadCards('cats');
   }
+  
   render() {
     return (
       <div className="App">
